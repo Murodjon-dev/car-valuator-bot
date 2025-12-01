@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 
 # ⚠️ ЗАМЕНИ НА СВОЙ НОВЫЙ ТОКЕН ИЗ @BotFather!
-BOT_TOKEN = "8507527015:AAFwdE8daIEmhe9BNoG4oR5Xy67lTLx879E"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
@@ -202,3 +202,4 @@ if __name__ == "__main__":
     bot.delete_webhook()
     print("[OK] Bot started! Send /start in Telegram.")
     bot.polling(none_stop=True)
+
