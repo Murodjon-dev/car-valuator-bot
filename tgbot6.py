@@ -1,3 +1,4 @@
+import os  # ← ЭТО ДОБАВЛЕНО
 import telebot
 from telebot import types
 
@@ -202,4 +203,3 @@ if __name__ == "__main__":
     bot.delete_webhook()
     print("[OK] Bot started! Send /start in Telegram.")
     bot.polling(none_stop=True)
-
